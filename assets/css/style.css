@@ -1,0 +1,44 @@
+@import url("mobile.css");
+
+@font-face {
+    font-family: pilgi;
+    src: url(../fonts/pilgi-regular.ttf);
+}
+
+body {
+    background-color: #FFF5BF;
+}
+
+.site_head {
+    font-family: pilgi;
+	font-size: 50px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.social_list ul li {
+	list-style: none;
+	text-align: center;
+}
+
+.social_icon {
+	width: 22px;
+	height: 22px;
+	padding: 3px 10px;
+}
+
+.container {
+  	display: flex;
+  	flex-direction: row;
+	justify-content: center;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+}
