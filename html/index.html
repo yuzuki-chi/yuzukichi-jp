@@ -4,37 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hachi+Maru+Pop&family=Hi+Melody&family=Lobster&family=Mynerve&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <meta property="og:image" content="./assets/images/og-image.png">
     <title>Yuzukichi.jp</title>
 </head>
 <body>
-	<div class="wrap">
-		<h1 class="site_head">Yuzukichi.jp</h1>
+    <div class="wrap">
+        <h1 id="title" class="site_head">Yuzukichi.jp</h1>
 
-		<div class="social_list">
-			<ul class="container">
-				<li>
-					<a href="https://twitter.com/y_z_k_c_">
-						<img src="./assets/images/twitter.svg" alt="Twitter" class="social_icon">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.facebook.com/yutaro.takaya">
-						<img src="./assets/images/facebook.svg" alt="facebook" class="social_icon">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/y.takaya1023">
-						<img src="./assets/images/instagram.svg" alt="Instagram" class="social_icon">
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/yuzuki-chi">
-						<img src="./assets/images/github.svg" alt="GitHub" class="social_icon">
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+        <div class="social_list">
+            <ul class="container">
+                <li>
+                    <a href="https://twitter.com/yuzukichu_lip" target="_blank">
+                        <img src="./assets/images/twitter.svg" alt="Twitter" class="social_icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bsky.app/profile/yuzukichi.jp" target="_blank">
+                        <img src="./assets/images/bluesky.svg" alt="Bluesky" class="social_icon">
+                    </a>
+                </li>
+                <!--
+                <li>
+                    <a href="https://mixi.social/@yzkc" target="_blank">
+                        <img src="./assets/images/mixi2.svg" alt="mixi2" class="social_icon">
+                    </a>
+                </li>
+                -->
+                <li>
+                    <a href="https://www.instagram.com/y_z_k_c_" target="_blank">
+                        <img src="./assets/images/instagram.svg" alt="Instagram" class="social_icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/yuzuki-chi" target="_blank">
+                        <img src="./assets/images/github.svg" alt="GitHub" class="social_icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
+<script>
+    const titleFontList = [
+        'hachi-maru-pop-regular',
+        'mynerve-regular',
+        'lobster-regular',
+        'great-vibes-regular',
+    ];
+    const titleFontListRandomindex = Math.floor(Math.random() * titleFontList.length)
+    document.getElementById('title').classList.toggle(titleFontList[titleFontListRandomindex])
+</script>
 </html>
